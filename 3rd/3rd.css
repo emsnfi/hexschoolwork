@@ -194,6 +194,10 @@ img{
   margin-bottom:16px;
   cursor: pointer;
 }
+.add-cart:hover{
+    background-color:#3F5D45;
+    color:#EAF0ED;
+}
 .pagelist{
     display:flex;
     justify-content: flex-end;
@@ -215,7 +219,7 @@ img{
     
 }
 .pagelist li img{
-    width:auto;
+    width:30px;
     
 }
 .pagelist li:hover{
@@ -383,14 +387,14 @@ img{
 @media(max-width: 584px) /*and (max-width: 1024px)*/{
   .header{
     justify-content: space-around;
-    height:50px;
+    height:70px;
     }
   .header .logopc{
      display: none;
     }
   .header .logophone{
      display: grid;
-      width:30%;
+      width:35%;
       height:auto;
     }
   .nav-item{
