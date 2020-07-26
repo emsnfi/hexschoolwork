@@ -56,7 +56,9 @@ img{
 .header{
   display:flex;
   justify-content:space-between;
+  align-items: center;
   margin-bottom:20px;
+
 }
 .header .burger-menu{
   display:none;
@@ -210,7 +212,7 @@ img{
 .pagelist li a{
     text-decoration: none;
     color:inherit;
-    padding:20px ;
+    
 }
 .pagelist li img{
     width:auto;
@@ -239,7 +241,6 @@ img{
 .subscribe .title ,.subscribe .form{
     display: flex;
     align-items: center;
-    /*width:50%;*/
     
 }
 .title p{
@@ -259,7 +260,6 @@ img{
     background-color: #EAF0ED;
     float:left;
     height: auto;
-    /*padding: 16px 16px 16px 64px;*/
     padding: 16px 60px;
     line-height: 24px;
     border: none;
@@ -383,6 +383,7 @@ img{
 @media(max-width: 584px) /*and (max-width: 1024px)*/{
   .header{
     justify-content: space-around;
+    height:50px;
     }
   .header .logopc{
      display: none;
@@ -397,7 +398,7 @@ img{
   }
   .header .burger-menu{
     display: block;
-    width:20%;
+    width:10%;
     height:auto;
   }
     .product{
