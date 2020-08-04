@@ -546,12 +546,13 @@ img {
         left: 0;
         top: 100px;
         background-color: white;
-        transition: all 4s;
+        transition: all 3s;
         overflow: hidden;
         background: white;
         flex-direction: column;
         z-index:2;   
-        min-width:560px;
+        max-width:560px;
+        width:100%;
         text-align: center;
     }
     .nav-item:hover{
@@ -559,7 +560,7 @@ img {
         outline: none;
     }
     .nav-item a{
-        line-height: 2.5;
+        line-height: 3;
         padding: 0 200px;
     }
     .header .burger-menu {
