@@ -1,0 +1,78 @@
+jquery
+https://www.youtube.com/watch?v=GVWOIP-HX70
+🏅 第四週老師講義
+基本文件
+jQ 兩小時教學影片(必看)
+引入jquery 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+SCSS 教學  https://www.udemy.com/course/responsive/
+animation
+基本範例
+移動速率
+完整解析 CSS 動畫 ( CSS Animation )
+animation-fill-mode
+a. forwards：停留在最後一個位置
+b. backrawds：回到原本位置
+c. both 擁有上面兩個的功能
+animate css
+transform
+文件
+基本範例
+opacity
+基本範例
+aos
+aos 官網
+基本範例
+第三週同學範例
+載入步驟
+在 </body>前加上以下程式碼
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+ AOS.init();
+</script>
+AOS 單一設計
+
+<div
+    data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center">
+  </div>
+AOS 全域設計
+
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+學員範例：https://codepen.io/liao/pen/BaovZRg
+AOS範例
+文章左右偏移：https://codepen.io/bradtraversy/pen/bGbREWg
+組合： https://codepen.io/amctagg1/pen/WVjGKw
+完整範例：https://codepen.io/taohuh/pen/OZmgRV
+RWD 觀念補充
+選擇 Repo
