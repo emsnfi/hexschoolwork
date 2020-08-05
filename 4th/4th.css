@@ -208,7 +208,6 @@ img {
     font-weight: bolder;
     line-height: 40px;
     text-align: center;
-    padding: 12px 0;
 }
 
 .slide-item:hover {
@@ -217,16 +216,17 @@ img {
     border: 1px solid #EAF0ED;
     text-align: center;
     line-height: 40px;
-    padding: 12px 0;
 }
 
 .slide-item a {
     text-decoration: none;
     color: inherit;
+    padding:12px;
+    display:block;
 }
 
 .slide-item-activef {
-    padding: 12px 0;
+    padding:12px;
     background-color: #3F5D45;
     color: #EAF0ED;
     text-align: center;
@@ -313,16 +313,15 @@ img {
     align-items: center;
     border: 0.5px solid #EAF0ED;
     font-size: 20px;
-    color: #3F5D45;
-    padding:25px;
+    color: #3F5D45;   
     justify-content: center;
-    line-height: 1.5;;
 }
 
 .pagelist li a {
     text-decoration: none;
     color: inherit;
-
+    display: block;
+    padding:25px;
 }
 
 
@@ -535,7 +534,7 @@ img {
         width: 45%;
         height: auto;
     }
-    .nav-list{
+    .navbar .nav-list{
         display: none;
     }
     .navbar .active{
@@ -580,7 +579,7 @@ img {
 
     .slidebar {
         width: 100%;
-        padding-bottom: 20px;
+        padding: 20px;
         font-size: 20px;
     }
 
