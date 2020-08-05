@@ -520,7 +520,7 @@ img {
 
 }
 
-@media(max-width: 584px) {
+@media (max-width: 584px) {
     .header {
         justify-content: space-around;
         height: 70px;
@@ -561,7 +561,7 @@ img {
     }
     .nav-item a{
         line-height: 3;
-        padding: 0 200px;
+        padding: 0 100px;
     }
     .header .burger-menu {
         display: block;
