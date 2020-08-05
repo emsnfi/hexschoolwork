@@ -565,7 +565,8 @@ img {
     }
     .header .burger-menu {
         display: block;
-        width: 10%;
+        padding: 20px;
+        width: 20%;
         height: auto;
         cursor: pointer;
         background: transparent;
