@@ -545,7 +545,7 @@ img {
         flex-direction: column;
         position: absolute;
         left: 0;
-        top: 100px;
+        top: 55px;
         background-color: white;
         transition: all 3s;
         overflow: hidden;
