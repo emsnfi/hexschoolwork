@@ -1,122 +1,174 @@
 .order {
   display: flex;
-  width: 80%;
+  align-items: flex-start;
+  width: 90%;
   margin: 0 auto;
-
+  @include pad{
+    width:100%;
+  }
   .invoice {
-    background-color: #3F5D45;
     color: #EAF0ED;
-    padding: 40px;
-    width: 55%;
+    width: 60%;
     margin-right: 10px;
-   
-    .content{
-      display:flex;
-      align-content: center;
-      justify-content: space-around;
-      margin:20px 0;
-
-      button{
-        
-        padding:15px 50px;
-        cursor: pointer;
-        width:50%;
-        font-size:16px;
-        border:1px solid #EAF0ED;
-        background-color: transparent;
-        color:#EAF0ED;
-        &:hover{
-          background-color: #EAF0ED;
-          color:#3F5D45;
-        }
-      }
-      
+    @include underpad{
+      width:100%;
     }
-    .input-content{
-      display: block;
-      input{
-        margin:10px 0;
-        padding: 20px 15px;
-        width:90%;
-        background-color: #EAF0ED;
-        font-size:16px;
+    &-list {
+      padding: 40px;
+      padding-bottom:10px;
+      background-color: #3F5D45;
+      @include underpad{
+        padding: 40px;
       }
-    }
-    .title {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      h2 {
-        font-size: 24px;
-        margin-right: 20px;
-      }
-
-      .progress {
+      .content {
         display: flex;
+        align-content: center;
         justify-content: space-around;
-        align-items: center;
+        margin: 25px 0;
 
-        hr{
-          width:55px;
+        button {
+          padding: 15px 45px;
+          cursor: pointer;
+          width: 50%;
+          font-size: 16px;
+          border: 1px solid #EAF0ED;
+          background-color: transparent;
+          color: #EAF0ED;
+          @include pad{
+            padding: 15px 30px;
+          }
+          @include underpad{
+            padding: 15px 20px;
+            
+          }
+          &:hover {
+            background-color: #EAF0ED;
+            color: #3F5D45;
+          }
         }
+
+      }
+
+      .input-content {
+        margin:20px 0;
+        display: block;
+        input {
+          margin: 15px 0;
+          padding: 20px 15px;
+          width: 90%;
+          background-color: #EAF0ED;
+          font-size: 16px;
+        }
+      }
+
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+          font-size: 24px;
+          margin-right: 20px;
+          
+        }
+
+        .progress {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          hr {
+            width: 55px;
+            @include underpad{
+              width: 35px;
+            }
+            @include smallmobile{
+              width:15px;
+            }
+          }
+        }
+      }
+
+    }
+    .confirm{
+      width: 100%;
+      background-color: #FFE180;
+      padding:15px 0;
+      line-height:1.5;
+      font-size:20px;
+      color:#3F5D45;
+      border:transparent;
+      &:hover{
+        background-color: #ebce71;
       }
     }
   }
 
-
   .detail {
-    width: 45%;
-    .price{
-      background-color:white;
-      border:1px solid #EAF0ED;
-      color:#8DA291;
-      margin-bottom:10px;
-      
-      h3{
+    width: 40%;
+    @include underpad{
+      display: none;
+    }
+    .price {
+      background-color: white;
+      border: 1px solid #EAF0ED;
+      color: #8DA291;
+      margin-bottom: 10px;
+
+      h3 {
         font-size: 20px;
-        padding:18px 0;
+        padding: 18px 0;
         background-color: #EAF0ED;
         text-align: center;
       }
-      &-list{
-        padding:10px;
+
+      &-list {
+        padding: 10px;
       }
-      &-item{
-        display:flex;
+
+      &-item {
+        display: flex;
         justify-content: space-between;
-        font-size:16px;
-        padding-top:10px;
-        align-items: center;;
-        img{
+        font-size: 16px;
+        padding-top: 10px;
+        align-items: center;
+        ;
+
+        img {
           width: 40%;
           height: 100px;
         }
-        
-        .product-detail{
-          width:50%;
-          li{
-            padding-top:5px;
-            line-height:1.5;
+
+        .product-detail {
+          width: 50%;
+          @include pad{
+            font-size:80%;
           }
-          .product-name{
-            font-size:16px;
+          li {
+            padding-top: 5px;
+            line-height: 1.5;
           }
-          .product-price{
-            font-size:20px;
+
+          .product-name {
+            font-size: 16px;
+          }
+
+          .product-price {
+            font-size: 20px;
           }
         }
 
       }
-      
-      .total{
-        font-size:18px;
-        display:flex;
+
+      .total {
+        font-size: 18px;
+        display: flex;
         justify-content: space-between;
-        padding-top:15px;
+        padding-top: 15px;
       }
     }
-    
-    
+
+
 
   }
 }
