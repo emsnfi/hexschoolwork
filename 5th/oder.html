@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="scss/all.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="5th.js"></script>
+  <title>訂單確認</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="header" data-aos="fade-right">
+    
+      <button class="burger-menu"><i class="fas fa-bars"></i></button>
+      <a href="index.html" class="logo"></a>
+
+      <div class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">首頁</a></li>
+          <li class="nav-item"><a href="#">甜點</a></li>
+          <li class="nav-item"><a href="#">登入</a></li>
+        <li></li>
+        </ul>
+      <a href="oder.html"><i class="fas fa-shopping-cart"></i></a> 
+    </div>
+    </nav>
+  <div class="order">
+    
+    <ul class="invoice">
+      <li class ="title">
+        <h2>發票</h2>
+        <ul class="progress">
+          <li><i class="fas fa-check-circle"></i></i></li>
+          <hr>
+          <li><i class="fas fa-check-circle"></i></li>
+          <hr>
+          <li><i class="far fa-circle"></i></li>
+        </ul>
+      </li>
+      <li class = "content">
+        <button>電子發票</button>
+        <button>郵寄發票</button>
+      </li>
+      <li class="input-content">
+        <p>電子郵件信箱</p>
+        <input type="text" placeholder="example@email.com">
+      </li>
+      <li class="input-content">
+        <p>統一編號（選填）</p>
+        <input type="text" placeholder="12345678">
+      </li>
+      
+    </ul>
+  
+    <div class="detail">
+      <div class="price">
+        <h3>訂單摘要</h3>
+        <ul class="price-list">
+          <li>
+            <div class="price-item">
+              <p>小計</p>
+              <p>NT$ 2,700</p>
+            </div>
+          </li>
+          <li>
+            <div class="price-item">
+              <p>運費</p>
+              <p>NT$ 300</p>
+            </div>
+          </li>
+          <li>
+            <div class="total">
+              <p>總計</p>
+              <p>NT$ 3,000</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="price">
+        <h3>購物清單</h3>
+
+        <ul class="price-list">
+          <li>
+            <div class="price-item">
+              <img src="https://bit.ly/2QvsT63" alt="">
+              <ul class="product-detail">
+                <li calss="product-name">焦糖馬卡龍（2）</li>
+                <li class="product-price">NT$ 900</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="price-item">
+              <img src="https://bit.ly/2zBDAxX" alt="">
+              <ul class="product-detail">
+                <li calss="product-name">焦糖馬卡龍（2）</li>
+                <li class="product-price">NT$ 900</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="price-item">
+              <img src="https://bit.ly/2zKOP7w" alt="">
+              <ul class="product-detail">
+                <li calss="product-name">焦糖馬卡龍（2）</li>
+                <li class="product-price">NT$ 900</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

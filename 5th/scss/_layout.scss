@@ -65,6 +65,7 @@
   .fa-shopping-cart{
     padding: 0 30px;
     text-decoration: none;
+    color:#3F5D45;
 
     @include mobile{
       padding:0 10px;
@@ -121,7 +122,7 @@
   }
   .active{
 
-    @include pad{
+    @include mobile{
       display: flex;
       flex-direction: column;
       position: absolute;

@@ -1,0 +1,122 @@
+.order {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+
+  .invoice {
+    background-color: #3F5D45;
+    color: #EAF0ED;
+    padding: 40px;
+    width: 55%;
+    margin-right: 10px;
+   
+    .content{
+      display:flex;
+      align-content: center;
+      justify-content: space-around;
+      margin:20px 0;
+
+      button{
+        
+        padding:15px 50px;
+        cursor: pointer;
+        width:50%;
+        font-size:16px;
+        border:1px solid #EAF0ED;
+        background-color: transparent;
+        color:#EAF0ED;
+        &:hover{
+          background-color: #EAF0ED;
+          color:#3F5D45;
+        }
+      }
+      
+    }
+    .input-content{
+      display: block;
+      input{
+        margin:10px 0;
+        padding: 20px 15px;
+        width:90%;
+        background-color: #EAF0ED;
+        font-size:16px;
+      }
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h2 {
+        font-size: 24px;
+        margin-right: 20px;
+      }
+
+      .progress {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        hr{
+          width:55px;
+        }
+      }
+    }
+  }
+
+
+  .detail {
+    width: 45%;
+    .price{
+      background-color:white;
+      border:1px solid #EAF0ED;
+      color:#8DA291;
+      margin-bottom:10px;
+      
+      h3{
+        font-size: 20px;
+        padding:18px 0;
+        background-color: #EAF0ED;
+        text-align: center;
+      }
+      &-list{
+        padding:10px;
+      }
+      &-item{
+        display:flex;
+        justify-content: space-between;
+        font-size:16px;
+        padding-top:10px;
+        align-items: center;;
+        img{
+          width: 40%;
+          height: 100px;
+        }
+        
+        .product-detail{
+          width:50%;
+          li{
+            padding-top:5px;
+            line-height:1.5;
+          }
+          .product-name{
+            font-size:16px;
+          }
+          .product-price{
+            font-size:20px;
+          }
+        }
+
+      }
+      
+      .total{
+        font-size:18px;
+        display:flex;
+        justify-content: space-between;
+        padding-top:15px;
+      }
+    }
+    
+    
+
+  }
+}

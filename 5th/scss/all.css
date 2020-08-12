@@ -137,6 +137,10 @@ img {
   height: auto;
 }
 
+button, input {
+  outline: none;
+}
+
 .container {
   margin: 0 auto;
   max-width: 940px;
@@ -223,6 +227,7 @@ img {
 .navbar .fa-shopping-cart {
   padding: 0 30px;
   text-decoration: none;
+  color: #3F5D45;
 }
 
 @media (max-width: 584px) {
@@ -294,7 +299,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 584px) {
   .navbar .active {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -785,5 +790,160 @@ img {
 .pagelist .arrow:hover {
   background-color: white;
   border: 0.5px solid black;
+}
+
+.order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.order .invoice {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+  padding: 40px;
+  width: 55%;
+  margin-right: 10px;
+}
+
+.order .invoice .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px 0;
+}
+
+.order .invoice .content button {
+  padding: 15px 50px;
+  cursor: pointer;
+  width: 50%;
+  font-size: 16px;
+  border: 1px solid #EAF0ED;
+  background-color: transparent;
+  color: #EAF0ED;
+}
+
+.order .invoice .content button:hover {
+  background-color: #EAF0ED;
+  color: #3F5D45;
+}
+
+.order .invoice .input-content {
+  display: block;
+}
+
+.order .invoice .input-content input {
+  margin: 10px 0;
+  padding: 20px 15px;
+  width: 90%;
+  background-color: #EAF0ED;
+  font-size: 16px;
+}
+
+.order .invoice .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order .invoice .title h2 {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.order .invoice .title .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order .invoice .title .progress hr {
+  width: 55px;
+}
+
+.order .detail {
+  width: 45%;
+}
+
+.order .detail .price {
+  background-color: white;
+  border: 1px solid #EAF0ED;
+  color: #8DA291;
+  margin-bottom: 10px;
+}
+
+.order .detail .price h3 {
+  font-size: 20px;
+  padding: 18px 0;
+  background-color: #EAF0ED;
+  text-align: center;
+}
+
+.order .detail .price-list {
+  padding: 10px;
+}
+
+.order .detail .price-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  padding-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order .detail .price-item img {
+  width: 40%;
+  height: 100px;
+}
+
+.order .detail .price-item .product-detail {
+  width: 50%;
+}
+
+.order .detail .price-item .product-detail li {
+  padding-top: 5px;
+  line-height: 1.5;
+}
+
+.order .detail .price-item .product-detail .product-name {
+  font-size: 16px;
+}
+
+.order .detail .price-item .product-detail .product-price {
+  font-size: 20px;
+}
+
+.order .detail .price .total {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 15px;
 }
 /*# sourceMappingURL=all.css.map */
