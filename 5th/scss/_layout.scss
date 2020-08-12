@@ -2,13 +2,13 @@
 
 .container {
   margin: 0 auto;
-  max-width: 940px;
+  max-width: 1000px;
 
   @include smallpc{
     max-width:750px;
   }
   @include pad{
-    width:75%;
+    width:80%;
   }
 }
 //header標頭
@@ -18,9 +18,9 @@
   justify-content: space-between;
   align-items: center;
   margin: 30px 0 ;
-
+  padding: 20px 0;
   @include mobile{
-    justify-content: space-around;
+    
     margin: 0;
   }
   .burger-menu {
@@ -28,8 +28,8 @@
 
     @include mobile{
         display: block;
-        padding: 20px;
-        width: 23%;
+        padding-right:10px;
+        
         height: auto;
         cursor: pointer;
         background: transparent;

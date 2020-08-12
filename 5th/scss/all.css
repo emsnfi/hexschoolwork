@@ -147,7 +147,7 @@ button, input {
 
 .container {
   margin: 0 auto;
-  max-width: 940px;
+  max-width: 1000px;
 }
 
 @media (max-width: 1024px) {
@@ -158,7 +158,7 @@ button, input {
 
 @media (max-width: 768px) {
   .container {
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -173,12 +173,11 @@ button, input {
       -ms-flex-align: center;
           align-items: center;
   margin: 30px 0;
+  padding: 20px 0;
 }
 
 @media (max-width: 584px) {
   .header {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     margin: 0;
   }
 }
@@ -190,8 +189,7 @@ button, input {
 @media (max-width: 584px) {
   .header .burger-menu {
     display: block;
-    padding: 20px;
-    width: 23%;
+    padding-right: 10px;
     height: auto;
     cursor: pointer;
     background: transparent;
@@ -856,6 +854,7 @@ button, input {
   border: 1px solid #EAF0ED;
   background-color: transparent;
   color: #EAF0ED;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -866,7 +865,8 @@ button, input {
 
 @media (max-width: 767px) {
   .order .invoice-list .content button {
-    padding: 15px 20px;
+    padding: 15px 12px;
+    font-size: 70%;
   }
 }
 
@@ -903,6 +903,7 @@ button, input {
 .order .invoice-list .title h2 {
   font-size: 24px;
   margin-right: 20px;
+  white-space: nowrap;
 }
 
 .order .invoice-list .title .progress {

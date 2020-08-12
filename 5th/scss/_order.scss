@@ -34,12 +34,13 @@
           border: 1px solid #EAF0ED;
           background-color: transparent;
           color: #EAF0ED;
+          white-space: nowrap;
           @include pad{
             padding: 15px 30px;
           }
           @include underpad{
-            padding: 15px 20px;
-            
+            padding: 15px 12px;
+            font-size: 70%;
           }
           &:hover {
             background-color: #EAF0ED;
@@ -69,6 +70,7 @@
         h2 {
           font-size: 24px;
           margin-right: 20px;
+          white-space: nowrap;
           
         }
 
