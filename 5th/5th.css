@@ -104,6 +104,7 @@ section {
 
 body {
     line-height: 1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 ol,
@@ -162,13 +163,14 @@ img {
     overflow: hidden;
     background-size: contain;
     background-repeat: no-repeat;
-  }
+}
 
 .nav-list {
     display: flex;
 }
 .navbar{
     display: flex;
+    align-items: center;
 }
 .nav-item {
     padding:0 10px;
@@ -184,14 +186,14 @@ img {
     text-decoration: none;
 }
 
-.navbar  img {
+.navbar  .fa-shopping-cart {
     padding:0 20px;
     text-decoration: none;
+    
 }
 
-.nav-item :hover {
+.nav-item:hover {
     border-bottom: 1px solid #3F5D45;
-    
 }
 
 .banner-img {
@@ -218,10 +220,6 @@ img {
 
 .slide-item:hover {
     background-color: #EAF0ED;
-    color: #3F5D45;
-    border: 1px solid #EAF0ED;
-    text-align: center;
-    line-height: 40px;
 }
 
 .slide-item a {
@@ -256,12 +254,13 @@ img {
     margin-bottom: 20px;
 }
 
-.menu-item .fav img {
+.menu-item .fa-heart {
 
     position: absolute;
     right: 22px;
     top: 19px;
     width: 7%;
+    cursor: pointer;
 }
 
 .menu-item .tag {
@@ -358,7 +357,7 @@ img {
 }
 
 .subscribe .title,
-.subscribe .form {
+.subscribe form {
     display: flex;
     align-items: center;
 
@@ -411,39 +410,36 @@ img {
     margin: 0 auto;
     display: flex;
     padding-bottom: 20px;
+    justify-content: space-between;
 }
 
 .information .infor-detail {
-    display: flex;
     width: 50%;
-    flex-direction: column;
     line-height: 1.5;
     color: #3F5D45;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.infor-detail .logo img {
+.infor-detail .logo {
     width: 171px;
     height: 27px;
+    padding-top: 20px;
+    padding-bottom: 110px;
 }
 
-.infor-detail .social img {
+.infor-detail .line, .fb {
     width: 32px;
     height: 32px;
+    padding-top: 20px;
+    padding-right: 10px;
 }
 
 .infor-detail .social {
     display: flex;
 }
 
-.infor-detail .logo {
-    padding-top: 20px;
-    padding-bottom: 110px;
-}
-
-.infor-detail .social img {
-    padding-top: 20px;
-    padding-right: 10px;
-}
 
 .information .slogan {
     display: flex;
@@ -463,7 +459,7 @@ img {
     font-weight: bolder;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) { /*smallpc*/
 
     .container {
         max-width: 750px;
@@ -478,19 +474,22 @@ img {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*pad*/
     
     .container {
         width: 75%;
     }
 
-
+    .nav-item{
+        padding: 0 5px;
+    }
     .nav-item a {
         padding: 10px;
     }
 
     .slidebar {
         font-size: 20px;
+        width: 45%;
     }
 
     .menu {
@@ -511,9 +510,8 @@ img {
     }
 
     .subscribe .title,
-    .subscribe .form {
+    .subscribe form {
         justify-content: center;
-        width: 100%;
         padding: 10px 0;
     }
 
@@ -523,12 +521,12 @@ img {
 
 }
 
-@media (max-width: 584px) {
+@media (max-width: 584px) {/*mobile*/
     .header {
         justify-content: space-around;
         margin: 0;
     }
-    .navbar img{
+    .navbar  .fa-shopping-cart{
         padding:0 10px;
     }
     .header .logo{
@@ -545,7 +543,7 @@ img {
         flex-direction: column;
         position: absolute;
         left: 0;
-        top: 55px;
+        top: 50px;
         background-color: white;
         transition: all 3s;
         overflow: hidden;
@@ -605,13 +603,6 @@ img {
 
     }
 
-    .subscribe .title{
-        white-space: nowrap;
-    }
-
-    form{
-        display: flex;
-    }
 
     .information {
         display: block;
@@ -639,4 +630,16 @@ img {
         
     }
 
+}
+
+@media (max-width:320px){
+    .navbar .fa-shopping-cart{
+        max-width:40%;
+    }
+    .detail{
+        font-size:98%;
+    }
+    .menu .menu-item .add-cart{
+        font-size:20px;
+    }
 }

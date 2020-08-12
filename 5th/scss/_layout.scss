@@ -4,6 +4,12 @@
   margin: 0 auto;
   max-width: 940px;
 
+  @include smallpc{
+    max-width:750px;
+  }
+  @include pad{
+    width:75%;
+  }
 }
 //header標頭
 
@@ -12,9 +18,24 @@
   justify-content: space-between;
   align-items: center;
   margin: 30px 0 ;
-  
+
+  @include mobile{
+    justify-content: space-around;
+    margin: 0;
+  }
   .burger-menu {
     display: none;
+
+    @include mobile{
+        display: block;
+        padding: 20px;
+        width: 23%;
+        height: auto;
+        cursor: pointer;
+        background: transparent;
+        border:transparent;
+        outline: none; 
+    }
   }
 
   .logo {
@@ -27,47 +48,97 @@
     overflow: hidden;
     background-size: contain;
     background-repeat: no-repeat;
-    @meida (max-width:)
-  }
 
-  
+    @include mobile{
+        background-image:url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg");
+        height: 20px;
+    }
+  }
 
 }
 
 .navbar{
   display: flex;
+  align-items: center;
+
+  
+  .fa-shopping-cart{
+    padding: 0 30px;
+    text-decoration: none;
+
+    @include mobile{
+      padding:0 10px;
+    }
+    @include smallmobile{
+        max-width:40%;
+    }
+  
+  }
 
   .nav-list {
     display: flex;
 
+    @include  mobile{
+      display: none;
+    }
     .nav-item {
       padding:0 10px;
       color: #3F5D45;
       line-height: 1.5;
 
+      @include pad{
+        padding: 0 5px;
+      }
+      &:hover{
+        @include mobile{
+          background-color:#EAF0ED;
+          outline: none;
+          text-decoration: none;
+        }
+      }
+
       a {
         padding: 10px 15px;
-      font-size: 16px;
-      font-weight: bolder;
-      color: #3F5D45;
-      text-decoration: none;
-      }
-
-      img {
-        padding: 0 30px;
+        font-size: 16px;
+        font-weight: bolder;
+        color: #3F5D45;
         text-decoration: none;
-      }
 
+        &:hover {
+          border-bottom: 1px solid #3F5D45;
+        }
 
-      :hover {
-        border-bottom: 1px solid #3F5D45;
+        @include pad{
+          padding: 10px;
+        }
+        @include mobile{
+          padding:12px 0;
+          display: block;
+        }
       }
 
     }
-
   }
+  .active{
 
-}
+    @include pad{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: 0;
+      top: 50px;
+      background-color: white;
+      transition: all 3s;
+      overflow: hidden;
+      background: white;
+      flex-direction: column;
+      z-index:2;   
+      max-width:560px;
+      width:100%;
+      text-align: center;
+    }
+  }
+  }
 
 //contact
 
@@ -84,11 +155,26 @@
   max-width: 800px;
   padding: 30px 0;
 
-  .title,.form{
+  
+  @include smallpc{
+    width:90%;
+  }
+  @include pad{
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .title {
+    white-space: nowrap;
     display: flex;
     align-items: center;
-  }
-  .title {
+
+    @include pad{
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+
     p {
       color: #EAF0ED;
       font-size: 24px;
@@ -99,9 +185,17 @@
       width: 40px;
       height: 40px;
     }
+    
 
   }
-  .form{
+  form{
+    display: flex;
+    align-items: center;
+    @include pad{
+      justify-content: center;
+      padding: 10px 0;
+    }
+
     .mail {
       background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/mail-24px.png);
       background-repeat: no-repeat;
@@ -114,7 +208,6 @@
       line-height: 24px;
       border: none;
     }
-  
     .submit {
       background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_forward-24px.png);
       background-repeat: no-repeat;
@@ -129,54 +222,8 @@
     }
   
   }
-  
 
 
-}
-
-.subscribe .title,
-.subscribe .form {
-  display: flex;
-  align-items: center;
-
-}
-
-.title p {
-  color: #EAF0ED;
-  font-size: 24px;
-  padding-left: 20px;
-  line-height: 1.5;;
-}
-
-.title img {
-  width: 40px;
-  height: 40px;
-}
-
-.mail {
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/mail-24px.png);
-  background-repeat: no-repeat;
-  background-position: 5% 50%;
-  background-size: 8%;
-  background-color: #EAF0ED;
-  float: left;
-  height: auto;
-  padding: 16px 60px;
-  line-height: 24px;
-  border: none;
-}
-
-.submit {
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_forward-24px.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: 50% 50%;
-  float: left;
-  border: none;
-  line-height: 16px;
-  background-color: #FFE180;
-  padding: 20px 24px;
-  cursor: pointer;
 }
 
 
@@ -188,63 +235,101 @@
 
 .footer {
   background-color: #EAF0ED;
+
+  .information {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    white-space: nowrap;
+
+    @include smallpc{
+      width:90%;
+    }
+    @include pad{
+      width:85%;
+    }
+    @include mobile{
+        display: block;
+        width: 70%;
+    }
+
+    .infor-detail {
+      width: 50%;
+      line-height: 1.5;
+      color: #3F5D45;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @include mobile{
+        display: block;
+        width: 100%;
+      }
+
+      .logo {
+        width: 171px;
+        height: 27px;
+        padding-top: 20px;
+        padding-bottom: 110px;
+
+        @include mobile{
+            padding-bottom: 50px;
+        }
+        
+
+      }
+
+      .social {
+        display: flex;
+      }
+      .line,.fb{
+        width: 32px;
+        height: 32px;
+        padding-top: 20px;
+        padding-right: 10px;
+      }
+
+    }
+
+  }
+
+  .slogan {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #3F5D45;
+    white-space: nowrap;
+
+    @include mobile{
+        display: block;
+        width: 100%;
+    }
+    .text {
+      writing-mode: vertical-rl;
+      line-height: 1.5;
+      font-size: 24px;
+      padding: 20px 0;
+      font-weight: bolder;
+
+      @include mobile{
+        display: none;
+      }
+    }
+    .patent{
+      @include mobile{
+        padding-top: 20px;
+        font-size: small;
+      }
+    }
+  }
+
 }
 
-.information {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  padding-bottom: 20px;
-}
 
-.information .infor-detail {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  line-height: 1.5;
-  color: #3F5D45;
-}
-
-.infor-detail .logo img {
-  width: 171px;
-  height: 27px;
-}
-
-.infor-detail .social img {
-  width: 32px;
-  height: 32px;
-}
-
-.infor-detail .social {
-  display: flex;
-}
-
-.infor-detail .logo {
-  padding-top: 20px;
-  padding-bottom: 110px;
-}
-
-.infor-detail .social img {
-  padding-top: 20px;
-  padding-right: 10px;
-}
-
-.information .slogan {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  justify-content: space-between;
-  align-items: flex-end;
-  color: #3F5D45;
-}
-
-.slogan .text {
-  writing-mode: vertical-rl;
-  line-height: 1.5;
-  font-size: 24px;
-  padding: 20px 0;
-  font-weight: bolder;
-}
 
 
 
