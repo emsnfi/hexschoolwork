@@ -847,7 +847,7 @@ button, input {
   margin: 25px 0;
 }
 
-.order .invoice-list .content .preset {
+.order .invoice-list .content .preset, .order .invoice-list .content .select {
   background-color: #EAF0ED;
   color: #3F5D45;
   border-right: 1px solid;

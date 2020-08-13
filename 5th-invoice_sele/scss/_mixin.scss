@@ -1,0 +1,25 @@
+@mixin  smallpc{
+  @media(max-width:1024px) {
+    @content;
+  }
+}
+@mixin pad{
+  @media(max-width:768px){
+    @content;
+  }
+}
+@mixin underpad{
+  @media(max-width:767px){
+    @content;
+  }
+}
+@mixin mobile{
+  @media(max-width:584px){
+    @content;
+  }
+}
+@mixin smallmobile {
+  @media(max-width:320px){
+    @content;
+  }
+}

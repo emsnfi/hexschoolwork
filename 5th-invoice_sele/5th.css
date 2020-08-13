@@ -1,0 +1,645 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*start*/
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 ;
+}
+
+.header .burger-menu {
+    display: none;
+}
+
+.header .logo{
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg");
+    display: block;
+    width: 40%;
+    height: 40px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav-list {
+    display: flex;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.nav-item {
+    padding:0 10px;
+    color:#3F5D45;
+    line-height: 1.5;
+}
+
+.nav-item a {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #3F5D45;
+    text-decoration: none;
+}
+
+.navbar  .fa-shopping-cart {
+    padding:0 20px;
+    text-decoration: none;
+    
+}
+
+.nav-item:hover {
+    border-bottom: 1px solid #3F5D45;
+}
+
+.banner-img {
+    margin-bottom: 20px;
+}
+
+.product {
+    display: flex;
+}
+
+.slidebar {
+    font-size: 24px;
+    width: 35%;
+
+}
+
+.slide-item {
+    color: #3F5D45;
+    border: 1px solid #EAF0ED;
+    font-weight: bolder;
+    line-height: 40px;
+    text-align: center;
+}
+
+.slide-item:hover {
+    background-color: #EAF0ED;
+}
+
+.slide-item a {
+    text-decoration: none;
+    color: inherit;
+    padding:12px;
+    display:block;
+}
+
+.slide-item-activef {
+    padding:12px;
+    background-color: #3F5D45;
+    color: #EAF0ED;
+    text-align: center;
+}
+
+.slide-item-activef a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.menu-item {
+    position: relative;
+    width: 46%;
+    margin-left: 4%;
+    margin-bottom: 20px;
+}
+
+.menu-item .fa-heart {
+
+    position: absolute;
+    right: 22px;
+    top: 19px;
+    width: 7%;
+    cursor: pointer;
+}
+
+.menu-item .tag {
+    position: absolute;
+    writing-mode: vertical-lr;
+    left: 40px;
+    top: 0;
+    color: #EAF0ED;
+    background-color: #3F5D45;
+    padding: 15px 10px;
+    letter-spacing: 3px;
+}
+
+.detail {
+    display: flex;
+    line-height: 60px;
+    color: #3F5D45;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    text-align:center;
+}
+
+.detail .product-name,.price {
+    border: 1px solid #EAF0ED;
+    width:50%;
+
+}
+
+.add-cart {
+    width: 100%;
+    border: 1px solid #EAF0ED;
+    color: #3F5D45;
+    background-color: #EAF0ED;
+    text-align: center;
+    line-height: 65px;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.add-cart:hover {
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
+
+.pagelist {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.pagelist li {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid #EAF0ED;
+    font-size: 20px;
+    color: #3F5D45;   
+    justify-content: center;
+}
+
+.pagelist li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding:25px;
+}
+
+
+.pagelist li:hover {
+    background-color: #3F5D45;
+    color: #EAF0ED;
+}
+
+.pagelist .arrow:hover {
+    background-color: white;
+    border: 0.5px solid black;
+}
+.pagelist img{
+    max-width: fit-content;
+}
+.contact {
+    background-color: #3F5D45;
+    margin-top: 20px;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px 0;
+}
+
+.subscribe .title,
+.subscribe form {
+    display: flex;
+    align-items: center;
+
+}
+
+.title p {
+    color: #EAF0ED;
+    font-size: 24px;
+    padding-left: 20px;
+    line-height: 1.5;;
+}
+
+.title img {
+    width: 40px;
+    height: 40px;
+}
+
+.mail {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/mail-24px.png);
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    background-size: 8%;
+    background-color: #EAF0ED;
+    float: left;
+    height: auto;
+    padding: 16px 60px;
+    line-height: 24px;
+    border: none;
+}
+
+.submit {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/arrow_forward-24px.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 50%;
+    float: left;
+    border: none;
+    line-height: 16px;
+    background-color: #FFE180;
+    padding: 20px 24px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #EAF0ED;
+}
+
+.information {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.information .infor-detail {
+    width: 50%;
+    line-height: 1.5;
+    color: #3F5D45;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infor-detail .logo {
+    width: 171px;
+    height: 27px;
+    padding-top: 20px;
+    padding-bottom: 110px;
+}
+
+.infor-detail .line, .fb {
+    width: 32px;
+    height: 32px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.infor-detail .social {
+    display: flex;
+}
+
+
+.information .slogan {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #3F5D45;
+    white-space: nowrap;
+}
+
+.slogan .text {
+    writing-mode: vertical-rl;
+    line-height: 1.5;
+    font-size: 24px;
+    padding: 20px 0;
+    font-weight: bolder;
+}
+
+@media (max-width: 1024px) { /*smallpc*/
+
+    .container {
+        max-width: 750px;
+    }
+
+    .subscribe {
+        width: 90%;
+    }
+
+    .information {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) { /*pad*/
+    
+    .container {
+        width: 75%;
+    }
+
+    .nav-item{
+        padding: 0 5px;
+    }
+    .nav-item a {
+        padding: 10px;
+    }
+
+    .slidebar {
+        font-size: 20px;
+        width: 45%;
+    }
+
+    .menu {
+        margin: 0 auto;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    .product-img {
+        width: 100%;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .subscribe .title,
+    .subscribe form {
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .information {
+        width: 85%;
+    }
+
+}
+
+@media (max-width: 584px) {/*mobile*/
+    .header {
+        justify-content: space-around;
+        margin: 0;
+    }
+    .navbar  .fa-shopping-cart{
+        padding:0 10px;
+    }
+    .header .logo{
+        background-image:url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg");
+        height: 20px;
+    }
+    
+    .navbar .nav-list{
+        display: none;
+    }
+    .navbar .active{
+        
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        background-color: white;
+        transition: all 3s;
+        overflow: hidden;
+        background: white;
+        flex-direction: column;
+        z-index:2;   
+        max-width:560px;
+        width:100%;
+        text-align: center;
+    }
+    .nav-item:hover{
+        background-color:#EAF0ED;
+        outline: none;
+        text-decoration: none;
+    }
+    .nav-item a{
+        padding:12px 0;
+        display: block;
+    }
+    .header .burger-menu {
+        display: block;
+        padding: 20px;
+        width: 23%;
+        height: auto;
+        cursor: pointer;
+        background: transparent;
+        border:transparent;
+        outline: none; 
+    }
+
+    .product {
+        display: block;
+    }
+
+    .slidebar {
+        width: 100%;
+        font-size: 20px;
+        padding-bottom:10px;
+    }
+
+    .menu {
+        margin: 0 auto;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    .product-img {
+        width: 100%;
+    }
+
+    
+
+    .pagelist li a{
+       padding:15px;
+
+    }
+
+
+    .information {
+        display: block;
+        width: 70%;
+        white-space: nowrap;
+    }
+
+    .information .slogan .text {
+        display: none;
+    }
+
+    .infor-detail .logo {
+        padding-bottom: 50px;
+    }
+
+    .slogan .patent {
+        padding-top: 20px;
+        font-size: small;
+    }
+
+    .information .slogan,
+    .information .infor-detail {
+        display: block;
+        width: 100%;
+        
+    }
+
+}
+
+@media (max-width:320px){
+    .navbar .fa-shopping-cart{
+        max-width:40%;
+    }
+    .detail{
+        font-size:98%;
+    }
+    .menu .menu-item .add-cart{
+        font-size:20px;
+    }
+}
