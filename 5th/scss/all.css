@@ -803,6 +803,7 @@ button, input {
           align-items: flex-start;
   width: 90%;
   margin: 0 auto;
+  line-height: 1.5;
 }
 
 @media (max-width: 768px) {
