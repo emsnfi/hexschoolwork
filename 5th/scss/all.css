@@ -690,10 +690,8 @@ button, input {
   letter-spacing: 3px;
 }
 
-@media (max-width: 768px) {
-  .menu .menu-item .product-img {
-    width: 100%;
-  }
+.menu .menu-item .product-img {
+  width: 100%;
 }
 
 .menu .menu-item .detail {
