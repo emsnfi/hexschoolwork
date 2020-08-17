@@ -173,14 +173,7 @@ button, input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 30px 0;
-  padding: 20px 0;
-}
-
-@media (max-width: 584px) {
-  .header {
-    margin: 0;
-  }
+  padding: 25px 0;
 }
 
 .header .burger-menu {
@@ -191,7 +184,6 @@ button, input {
   .header .burger-menu {
     display: block;
     padding-right: 10px;
-    height: auto;
     cursor: pointer;
     background: transparent;
     border: transparent;
@@ -1006,6 +998,7 @@ button, input {
 
 .order .detail .price-item .product-detail {
   width: 50%;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {

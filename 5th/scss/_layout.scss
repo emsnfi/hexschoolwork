@@ -17,20 +17,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 0 ;
-  padding: 20px 0;
-  @include mobile{
-    
-    margin: 0;
-  }
+  padding: 25px 0;
+
   .burger-menu {
     display: none;
 
     @include mobile{
         display: block;
         padding-right:10px;
-        
-        height: auto;
         cursor: pointer;
         background: transparent;
         border:transparent;

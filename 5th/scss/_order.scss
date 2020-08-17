@@ -153,6 +153,7 @@
 
         .product-detail {
           width: 50%;
+          white-space: nowrap;
           @include pad{
             font-size:80%;
           }
@@ -181,5 +182,4 @@
     }
 
   }
-
-  }
+}
