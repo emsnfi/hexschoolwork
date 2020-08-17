@@ -1,25 +1,41 @@
 h1,h2{
 
-  font-size: 36px;
+  font-size: $font-size-title;
   margin:10px 0;
-  
+  font-weight: bolder;
 }
 p{
-  font-size:18px;
+  font-size:$font-size-p;
   margin-bottom:10px;
-  .leading-content{
-    font-size: 22px;
-    
+}
+.leading-content{
+    font-size: $font-size-plarge;
   }
-  .note{
-    color:#e83e8c;
+.btn{
+  &.btn-primary{
+    background-color:$button-brown;
+    border:$button-brown;
+    &:hover{
+      background-color: $button-brown-dark;
+    }
   }
+  
 }
 
-
+.note {
+    &-red{
+      color:$note-red;
+      }
+    &-yellow{
+      color:$note-yellow;
+    }
+    &-dark{
+      font-weight:bolder;
+    }
+  }
 .themed-grid-col{
   padding-top: 15px;
   padding-bottom: 15px;
-  background: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
+  background:$theme-gray;
+  border: 1px solid $theme-border-gray;
 }

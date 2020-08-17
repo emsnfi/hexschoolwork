@@ -55,19 +55,37 @@ table {
 h1, h2 {
   font-size: 36px;
   margin: 10px 0;
+  font-weight: bolder;
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
-p .leading-content {
-  font-size: 22px;
+.leading-content {
+  font-size: 20px;
 }
 
-p .note {
+.btn.btn-primary {
+  background-color: #916000;
+  border: #916000;
+}
+
+.btn.btn-primary:hover {
+  background-color: #352402;
+}
+
+.note-red {
   color: #e83e8c;
+}
+
+.note-yellow {
+  color: #ffc420;
+}
+
+.note-dark {
+  font-weight: bolder;
 }
 
 .themed-grid-col {
