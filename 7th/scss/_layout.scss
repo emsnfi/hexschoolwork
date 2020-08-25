@@ -1,0 +1,66 @@
+img{
+  max-width:100%;
+}
+h1{
+  a{
+    background: no-repeat center url(../img/d’Perfume.png);
+    display: block;
+    text-indent: 111%;
+    overflow: hidden;
+    white-space: nowrap;
+
+
+  }
+}
+.mobile-cart{
+  
+  position: relative;
+  .cart-num{
+      font-size: 12px;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: -20%;
+      left: 70%;
+      border-radius: 7px;
+  }
+  @include media-breakpoint-down(md){
+      display: initial;
+  }
+}
+
+.subscribe{
+  background:no-repeat center url(../img/footer.png) ;
+  
+  background-size: cover;
+  h3{
+    @include media-breakpoint-down(xs){
+        font-size: 24px;
+    }
+  }
+  .input-group{
+    
+    input{
+      height:70px;
+      border:2px solid $primary
+    }
+    
+  }
+}
+
+.rights{
+  img{
+    max-width:30%;
+  }
+  p{
+    @include media-breakpoint-down(xs){
+      font-size:14px;
+  }
+  }
+  ul{
+    
+      font-size: 20px;
+  
+  }
+}
+
