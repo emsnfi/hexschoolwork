@@ -1,0 +1,10 @@
+.btn{
+  &-active{
+    color:$primary;
+    &:hover{
+      background-color: $primary;
+      color:white;
+    }
+    
+  }
+}

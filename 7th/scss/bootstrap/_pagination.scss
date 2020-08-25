@@ -10,23 +10,24 @@
   padding: $pagination-padding-y $pagination-padding-x;
   margin-left: -$pagination-border-width;
   line-height: $pagination-line-height;
-  color: $pagination-color;
+  color: black;//$pagination-color;
   text-decoration: if($link-decoration == none, null, none);
-  background-color: $pagination-bg;
-  border: $pagination-border-width solid $pagination-border-color;
+  background-color: white;//$pagination-bg;
+  border: none;//$pagination-border-width solid $pagination-border-color;
 
   &:hover {
     z-index: 2;
-    color: $pagination-hover-color;
-    text-decoration: none;
-    background-color: $pagination-hover-bg;
-    border-color: $pagination-hover-border-color;
+    color: $brownLight;//$pagination-hover-color;
+    text-decoration: $brownLight;
+    background-color: transparent;//$pagination-hover-bg;
+    //border-color: $brownLight;//$pagination-hover-border-color;
+    border-bottom:1px solid $brownLight;
   }
 
   &:focus {
     z-index: 3;
-    outline: $pagination-focus-outline;
-    box-shadow: $pagination-focus-box-shadow;
+    //outline: $pagination-focus-outline;
+    //box-shadow: $pagination-focus-box-shadow;
   }
 }
 
@@ -45,9 +46,10 @@
 
   &.active .page-link {
     z-index: 3;
-    color: $pagination-active-color;
-    background-color: $pagination-active-bg;
-    border-color: $pagination-active-border-color;
+    color: $brownLight;//$pagination-active-color;
+    background-color: white;//$pagination-active-bg;
+    border-color: $brownLight;//$pagination-active-border-color;
+    border-bottom: 1px solid;
   }
 
   &.disabled .page-link {

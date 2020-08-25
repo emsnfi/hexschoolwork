@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>產品 d’Perfume</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <div class="container header mb-2">
+    <nav class="row navbar navbar-expand-md navbar-light">
+
+      <h1 class="col-5 col-md-3 col-lg-2 navbar-brand p-0 m-0"><a href="index.html">d’Perfume</a></h1>
+
+      <div class="mobile-show col-5 d-flex d-md-none justify-content-end align-items-center">
+        <div class="mobile-cart mr-3">
+          <a href=""><i class="fas fa-shopping-cart text-grayLight"></i></a>
+          <p class="cart-num text-white text-center bg-primary">3</p>
+        </div>
+        <button class="navbar-toggler border-0 btn" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </div>
+
+
+      <div class="col-md-9 col-lg-10 d-none d-md-flex justify-content-end" id="navbarNav1">
+        <ul class="navbar-nav d-flex text-grayLight">
+          <li class="nav-item d-flex align-items-center mr-3">
+            <i class="fas fa-tshirt mr-1"></i>
+            <a class="nav-link" href="product.html">Product</a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-3">
+            <i class="fas fa-user mr-1"></i>
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-3">
+            <i class="fas fa-heart"></i>
+            <a class="nav-link" href="#">Wishlist</a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-3">
+            <i class="fas fa-shopping-cart"></i>
+            <a class="nav-link" href="#">Cart(3)</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto d-flex justify-content-between">
+      <li class="nav-item  bg-grayDark text-center border-bottom border-white">
+        <a class="nav-link text-white py-3" href="product.html">Product</a>
+      </li>
+      <li class="nav-item  bg-grayDark text-center border-bottom border-white">
+        <a class="nav-link text-white py-3" href="#">Wishlist</a>
+      </li>
+      <li class="nav-item   bg-grayDark text-center border-bottom border-white">
+        <a class="nav-link text-white py-3" href="#">Blog</a>
+      </li>
+      <li class="nav-item   bg-grayDark text-center border-bottom border-white">
+        <a class="nav-link text-white py-3" href="#">Contact</a>
+      </li>
+      <li class="nav-item  bg-grayDark text-center">
+        <a class="nav-link text-white py-3" href="login.html">Log in</a>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+<div class="container-fluid productNav bg-primary d-none d-md-flex mb-5">
+  <div class="container">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#CHANEL">CHANEL</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#Jo Malone">Jo Malone</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#Curology">Curology</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#Dior">Dior</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#Chloe">Chloe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#ZARA">ZARA</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="modal fade" id="cartAdd" tabindex="-1" role="dialog" aria-labelledby=cartAddTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-body text-center">
+              <span class="text-primary font-weight-bold">已加入購物車</span>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="wishAdd" tabindex="-1" role="dialog" aria-labelledby=wishAddTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-body text-center">
+              <span class="text-primary font-weight-bold">已加入我的收藏</span>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="container productDetail">
+  <div class="row flex-row-reverse">
+    <ul class="col-md-5 col-lg-4 list-unstyled">
+      <li class="d-flex d-md-none mb-3">
+        <img src="img/productDetail/ChanelD-1.png" alt="">
+      </li>
+      <li>
+        <h5 class="font-weight-bold">CHANEL N°5</h3>
+        <p class="mb-4">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
+        <p>NT$4,980</p>
+      </li>
+      <li class="mb-2">
+        <div class="input-group ">
+          <select class="custom-select border-primary" id="inputGroupSelect" aria-label="Example select with button addon">
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+          </select>
+          <div class="input-group-append">
+              <button class="btn btn-primary px-5" type="button" data-toggle="modal" data-target="#cartAdd">加入購物車</button>
+          </div>
+      </div>
+      </li>
+      <li class="mb-5">
+        <div class="d-flex align-items-center" role="button" data-toggle="modal" data-target="#wishAdd">
+          <i class="fas fa-heart text-primary mr-1"></i>
+          <p class="mb-0 pointer-cursor">加入我的收藏</p>
+      </div>
+      </li>
+      <li class="mb-3">
+        <p class="font-weight-bolder mb-1">商品購買須知</p>
+        <p>產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。 商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。 D’Perfume 盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。</p>
+      </li>
+      <li>
+      <p class=" font-weight-bold mb-1">退換貨須知</p>
+        <p>依《消費者保護法》的規定，於全站購物皆享有商品到貨【七日猶豫期】（含例假日）之權益。若收到的商品有任何問題，可於猶豫期內申請退貨。</p>
+      </li>
+    </ul>
+    <ul class="col-md-7 col-lg-8 list-unstyled">
+      <li class="mb-4">
+        <div class="row">
+          <div class="d-none d-md-flex col-md-12">
+        <img class="image-top"src="img/productDetail/ChanelD-1.png" alt="">
+      </div>
+      </div>
+      </li>
+      <li class="d-flex mb-md-4">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-2">
+        <img class="img-fluid" src="img/productDetail/ChanelD-2.png" alt="">
+      </div>
+      <div class="col-12 col-md-6 mb-2">
+        <img class="img-fluid" src="img/productDetail/ChanelD-3.png" alt="">
+      </div>
+        </div>
+      </li>
+
+      <li>
+        <img class="d-flex d-md-none"src="img/productDetail/ChanelD-5.png" alt="">
+      </li>
+      <li>
+        <img class="d-none d-md-flex"src="img/productDetail/ChanelD-4.png" alt="">
+      </li>
+    </ul>
+    
+  </div>
+</div>
+
+
+
+
+
+
+  
+
+<div class="footer">
+
+  <div class="container-fluid rights bg-primary">
+    <div class="container">
+      <div class="py-3 d-flex justify-content-between align-items-center">
+         <div class="d-flex align-items-center">
+           <img class="mr-3" src="img/d’Perfumewfooter.png" alt="">
+           <p class="text-white m-0">© 2020. All Rights Reserved.</p>
+         </div>
+         <ul class="d-none text-white d-lg-flex list-unstyled m-0">
+           <li class="mr-6">
+             <a href="product.html" class="text-white">Product</a>
+           </li>
+           <li class="mr-6">
+            <a href="#" class="text-white">Blog</a>
+          </li>
+          <li class="mr-6">
+            <a href="#" class="text-white">Contact</a>
+          </li>
+         </ul>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+  crossorigin="anonymous"></script>
+</body>
+</html>

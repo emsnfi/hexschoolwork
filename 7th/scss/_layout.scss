@@ -32,6 +32,13 @@ h1{
 .subscribe{
   background:no-repeat center url(../img/footer.png) ;
   
+
+  @include media-breakpoint-down(xs){
+    background: no-repeat url(../img/footer-banner-pad.png);
+    background-size: cover;
+    
+  }
+
   background-size: cover;
   h3{
     @include media-breakpoint-down(xs){
@@ -41,7 +48,7 @@ h1{
   .input-group{
     
     input{
-      height:70px;
+      height:60px;
       border:2px solid $primary
     }
     
@@ -54,7 +61,7 @@ h1{
   }
   p{
     @include media-breakpoint-down(xs){
-      font-size:14px;
+      font-size:12px;
   }
   }
   ul{

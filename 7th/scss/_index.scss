@@ -32,12 +32,11 @@ img{
         
     }
     button{
-        border: 2px solid white;
-        border-radius: 30px;
+        @include buttonRadius;
         padding: 10px 100px;
         font-size: 24px;
         color:white;
-        white-space: nowrap;
+        
         @include media-breakpoint-down(xs){
             font-size: 20px;
         }
@@ -63,26 +62,20 @@ img{
             
         }
         .btn-plan{
-                border: 2px solid black;
-                border-radius: 20px;
+                
+                @include buttonRadius;
                 padding: 10px 30px;
                 font-size: 12px;
+                
             &:hover{
-                background-color:$graylight;
+                background-color:$grayLighter;
                 
             }
              
          }
     }
 }
-.recycle{
-    .subtitle{
-        font-size:16px;
-    }
-    p{
-        font-size: 14px;
-    }
-}
+/*
 .card{
     white-space: nowrap;
     .card-body{
@@ -107,6 +100,7 @@ img{
     }
     
 }
+*/
 .sold-out{
     position: relative;
     background: no-repeat center url(../img/appleC.png);

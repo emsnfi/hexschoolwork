@@ -21,7 +21,7 @@
 
       <div class="mobile-show col-5 d-flex d-md-none justify-content-end align-items-center">
         <div class="mobile-cart mr-3">
-          <a href=""><i class="fas fa-shopping-cart text-graynav"></i></a>
+          <a href=""><i class="fas fa-shopping-cart text-grayLight"></i></a>
           <p class="cart-num text-white text-center bg-primary">3</p>
         </div>
         <button class="navbar-toggler border-0 btn" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -33,14 +33,14 @@
 
 
       <div class="col-md-9 col-lg-10 d-none d-md-flex justify-content-end" id="navbarNav1">
-        <ul class="navbar-nav d-flex text-graynav">
-          <li class="nav-item d-flex align-items-center mr-4">
+        <ul class="navbar-nav d-flex text-grayLight">
+          <li class="nav-item d-flex align-items-center mr-3">
             <i class="fas fa-tshirt mr-1"></i>
             <a class="nav-link" href="product.html">Product</a>
           </li>
           <li class="nav-item d-flex align-items-center mr-3">
             <i class="fas fa-user mr-1"></i>
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link" href="login.html">Login</a>
           </li>
           <li class="nav-item d-flex align-items-center mr-3">
             <i class="fas fa-heart"></i>
@@ -58,19 +58,19 @@
 
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav mr-auto d-flex justify-content-between">
-      <li class="nav-item  bg-grayNav text-center border-bottom border-white">
+      <li class="nav-item  bg-grayDark text-center border-bottom border-white">
         <a class="nav-link text-white py-3" href="product.html">Product</a>
       </li>
-      <li class="nav-item  bg-grayNav text-center border-bottom border-white">
+      <li class="nav-item  bg-grayDark text-center border-bottom border-white">
         <a class="nav-link text-white py-3" href="#">Wishlist</a>
       </li>
-      <li class="nav-item   bg-grayNav text-center border-bottom border-white">
+      <li class="nav-item   bg-grayDark text-center border-bottom border-white">
         <a class="nav-link text-white py-3" href="#">Blog</a>
       </li>
-      <li class="nav-item   bg-grayNav text-center border-bottom border-white">
+      <li class="nav-item   bg-grayDark text-center border-bottom border-white">
         <a class="nav-link text-white py-3" href="#">Contact</a>
       </li>
-      <li class="nav-item  bg-grayNav text-center">
+      <li class="nav-item  bg-grayDark text-center">
         <a class="nav-link text-white py-3" href="login.html">Log in</a>
       </li>
     </ul>
@@ -104,9 +104,31 @@
   </div>
 </div>
 
+
+<div class="modal fade" id="cartAdd" tabindex="-1" role="dialog" aria-labelledby=cartAddTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-body text-center">
+              <span class="text-primary font-weight-bold">已加入購物車</span>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="wishAdd" tabindex="-1" role="dialog" aria-labelledby=wishAddTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-body text-center">
+              <span class="text-primary font-weight-bold">已加入我的收藏</span>
+          </div>
+      </div>
+  </div>
+</div>
+
 <div class="container productMenu">
   <ul class="row mb-4 list-unstyled justify-content-center">
-    <li class="col-12 col-md-6 col-lg-4 border-0>
+    <li class="col-12 col-md-6 col-lg-3">
+      <a href="productDetail.html">
       <div class="card mr-md-3">
         <img src="img/product/1-1.png" class="card-img-top" alt="">
         <div class="card-body p-0 mb-5">
@@ -114,16 +136,19 @@
           <p class="card-text m-0">Jo Malone</p>
           <div class="d-flex card-text justify-content-sm-center justify-content-md-start">
             <p class="mr-2 mb-0">NT$1,380</p>
-            <del class="text-graynav">NT$1,580</del>
+            <del class="text-grayLight">NT$1,580</del>
         </div>
         <div class="d-flex card-text pt-2">
-          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wish-add"></i>
-          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cart-add"></i>
+          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wishAdd"></i>
+          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cartAdd"></i>
       </div>
       </div>
+    
+    </a>
     </li>
    
-    <li class="col-12 col-md-6 col-lg-4 border-0>
+    <li class="col-12 col-md-6 col-lg-3">
+      <a href="productDetail.html">
       <div class="card mr-md-3">
         <img src="img/product/1-2.png" class="card-img-top" alt="">
         <div class="card-body p-0 mb-5">
@@ -131,32 +156,39 @@
           <p class="card-text m-0">Jo Malone</p>
           <div class="d-flex card-text justify-content-sm-center justify-content-md-start">
             <p class="mr-2 mb-0">NT$1,380</p>
-            <del class="text-graynav">NT$1,580</del>
+            <del class="text-grayLight">NT$1,580</del>
         </div>
         <div class="d-flex card-text pt-2">
-          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wish-add"></i>
-          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cart-add"></i>
+          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wishAdd"></i>
+          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cartAdd"></i>
       </div>
       </div>
-    </li>
+    
+    </a>
 
-    <li class="col-12 col-md-6 col-lg-4 border-0>
+      </li>
+
+    <li class="col-12 col-md-6 col-lg-3">
+      <a href="productDetail.html">
       <div class="card mr-md-3">
-        <img src="img/product/1-3.png" class="card-img-top" alt="...">
+        <img src="img/product/1-3.png" class="card-img-top" alt="">
         <div class="card-body p-0 mb-5">
           <h5 class="card-title">Poppy & Barley</h5>
           <p class="card-text m-0">Jo Malone</p>
           <div class="d-flex card-text justify-content-sm-center justify-content-md-start">
             <p class="mr-2 mb-0">NT$1,380</p>
-            <del class="text-graynav">NT$1,580</del>
+            <del class="text-grayLight">NT$1,580</del>
         </div>
         <div class="d-flex card-text pt-2">
-          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wish-add"></i>
-          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cart-add"></i>
+          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wishAdd"></i>
+          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cartAdd"></i>
       </div>
       </div>
-    </li>
-    <li class="col-12 col-md-6 col-lg-4 border-0>
+    </a>
+
+      </li>
+    <li class="col-12 col-md-6 col-lg-3">
+      <a href="productDetail.html">
       <div class="card mr-md-3">
         <img src="img/product/1-4.png" class="card-img-top" alt="...">
         <div class="card-body p-0 mb-5">
@@ -164,15 +196,16 @@
           <p class="card-text m-0">Jo Malone</p>
           <div class="d-flex card-text justify-content-sm-center justify-content-md-start">
             <p class="mr-2 mb-0">NT$1,380</p>
-            <del class="text-graynav">NT$1,580</del>
+            <del class="text-grayLight">NT$1,580</del>
         </div>
         <div class="d-flex card-text pt-2">
-          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wish-add"></i>
-          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cart-add"></i>
+          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wishAdd"></i>
+          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cartAdd"></i>
       </div>
       </div>
-    </li>
-    <li class="col-12 col-md-6 col-lg-4 border-0>
+    </a></li>
+    <li class="col-12 col-md-6 col-lg-3">
+      <a href="productDetail.html">
       <div class="card mr-md-3">
         <img src="img/product/2-1.png" class="card-img-top" alt="...">
         <div class="card-body p-0 mb-5">
@@ -180,31 +213,34 @@
           <p class="card-text m-0">Jo Malone</p>
           <div class="d-flex card-text justify-content-sm-center justify-content-md-start">
             <p class="mr-2 mb-0">NT$1,380</p>
-            <del class="text-graynav">NT$1,580</del>
+            <del class="text-grayLight">NT$1,580</del>
         </div>
         <div class="d-flex card-text pt-2">
-          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wish-add"></i>
-          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cart-add"></i>
+          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wishAdd"></i>
+          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cartAdd"></i>
       </div>
       </div>
-    </li>
-    <li class="col-12 col-md-6 col-lg-4 border-0>
+    </a></li>
+    <li class="col-12 col-md-6 col-lg-3">
+      <a href="productDetail.html">
       <div class="card mr-md-3">
-        <img src="img/product/2-2.png" class="card-img-top" alt="...">
+        <img src="img/product/2-2.png" class="card-img-top" alt="">
         <div class="card-body p-0 mb-5">
           <h5 class="card-title">Poppy & Barley</h5>
           <p class="card-text m-0">Jo Malone</p>
           <div class="d-flex card-text justify-content-sm-center justify-content-md-start">
             <p class="mr-2 mb-0">NT$1,380</p>
-            <del class="text-graynav">NT$1,580</del>
+            <del class="text-grayLight">NT$1,580</del>
         </div>
         <div class="d-flex card-text pt-2">
-          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wish-add"></i>
-          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cart-add"></i>
+          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wishAdd"></i>
+          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cartAdd"></i>
       </div>
       </div>
-    </li>
-    <li class="col-12 col-md-6 col-lg-4 border-0>
+    </a>
+  </li>
+    <li class="col-12 col-md-6 col-lg-3">
+      <a href="productDetail.html">
       <div class="card mr-md-3">
         <img src="img/product/2-3.png" class="card-img-top" alt="">
         <div class="card-body p-0 mb-5">
@@ -212,16 +248,18 @@
           <p class="card-text m-0">Jo Malone</p>
           <div class="d-flex card-text justify-content-sm-center justify-content-md-start">
             <p class="mr-2 mb-0">NT$1,380</p>
-            <del class="text-graynav">NT$1,580</del>
+            <del class="text-grayLight">NT$1,580</del>
         </div>
         <div class="d-flex card-text pt-2">
-          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wish-add"></i>
-          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cart-add"></i>
+          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wishAdd"></i>
+          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cartAdd"></i>
       </div>
       </div>
-    </li>
+    </a></li>
+  
     
-    <li class="col-12 col-md-6 col-lg-4 border-0>
+    <li class="col-12 col-md-6 col-lg-3">
+      <a href="productDetail.html">
       <div class="card mr-md-3">
         <img src="img/product/2-4.png" class="card-img-top" alt="">
         <div class="card-body p-0 mb-5">
@@ -229,16 +267,17 @@
           <p class="card-text m-0">Jo Malone</p>
           <div class="d-flex card-text justify-content-sm-center justify-content-md-start">
             <p class="mr-2 mb-0">NT$1,380</p>
-            <del class="text-graynav">NT$1,580</del>
+            <del class="text-grayLight">NT$1,580</del>
         </div>
         <div class="d-flex card-text pt-2">
-          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wish-add"></i>
-          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cart-add"></i>
+          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wishAdd"></i>
+          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cartAdd"></i>
       </div>
       </div>
-    </li>
+    </a></li>
 
-    <li class="col-12 col-md-6 col-lg-4 border-0>
+    <li class="col-12 col-md-6 col-lg-3">
+      <a href="productDetail.html">
       <div class="card mr-md-3">
         <img src="img/product/3-1.png" class="card-img-top" alt="">
         <div class="card-body p-0 mb-5">
@@ -246,16 +285,18 @@
           <p class="card-text m-0">Jo Malone</p>
           <div class="d-flex card-text justify-content-sm-center justify-content-md-start">
             <p class="mr-2 mb-0">NT$1,380</p>
-            <del class="text-graynav">NT$1,580</del>
+            <del class="text-grayLight">NT$1,580</del>
         </div>
         <div class="d-flex card-text pt-2">
-          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wish-add"></i>
-          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cart-add"></i>
+          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wishAdd"></i>
+          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cartAdd"></i>
       </div>
       </div>
-    </li>
     
-    <li class="col-12 col-md-6 col-lg-4 border-0>
+    </a></li>
+    
+    <li class="col-12 col-md-6 col-lg-3">
+      <a href="productDetail.html">
       <div class="card mr-md-3">
         <img src="img/product/3-2.png" class="card-img-top" alt="">
         <div class="card-body p-0 mb-5">
@@ -263,16 +304,17 @@
           <p class="card-text m-0">Jo Malone</p>
           <div class="d-flex card-text justify-content-sm-center justify-content-md-start">
             <p class="mr-2 mb-0">NT$1,380</p>
-            <del class="text-graynav">NT$1,580</del>
+            <del class="text-grayLight">NT$1,580</del>
         </div>
         <div class="d-flex card-text pt-2">
-          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wish-add"></i>
-          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cart-add"></i>
+          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wishAdd"></i>
+          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cartAdd"></i>
       </div>
       </div>
-    </li>
+    </a></li>
     
-    <li class="col-12 col-md-6 col-lg-4 border-0>
+    <li class="col-12 col-md-6 col-lg-3">
+      <a href="productDetail.html">
       <div class="card mr-md-3">
         <img src="img/product/3-3.png" class="card-img-top" alt="">
         <div class="card-body p-0 mb-5">
@@ -280,15 +322,16 @@
           <p class="card-text m-0">Jo Malone</p>
           <div class="d-flex card-text justify-content-sm-center justify-content-md-start">
             <p class="mr-2 mb-0">NT$1,380</p>
-            <del class="text-graynav">NT$1,580</del>
+            <del class="text-grayLight">NT$1,580</del>
         </div>
         <div class="d-flex card-text pt-2">
-          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wish-add"></i>
-          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cart-add"></i>
+          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wishAdd"></i>
+          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cartAdd"></i>
       </div>
       </div>
-    </li>
-    <li class="col-12 col-md-6 col-lg-4 border-0>
+    </a></li>
+    <li class="col-12 col-md-6 col-lg-3">
+      <a href="productDetail.html">
       <div class="card mr-md-3">
         <img src="img/product/3-4.png" class="card-img-top" alt="">
         <div class="card-body p-0 mb-5">
@@ -296,14 +339,14 @@
           <p class="card-text m-0">Jo Malone</p>
           <div class="d-flex card-text justify-content-sm-center justify-content-md-start">
             <p class="mr-2 mb-0">NT$1,380</p>
-            <del class="text-graynav">NT$1,580</del>
+            <del class="text-grayLight">NT$1,580</del>
         </div>
         <div class="d-flex card-text pt-2">
-          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wish-add"></i>
-          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cart-add"></i>
+          <i class="fas fa-heart text-primary mr-2" role="button" data-toggle="modal" data-target="#wishAdd"></i>
+          <i class="fas fa-shopping-cart text-primary" role="button" data-toggle="modal" data-target="#cartAdd"></i>
       </div>
       </div>
-    </li>
+    </a></li>
   </ul>
 </div>
 
@@ -311,64 +354,63 @@
 
 
 <div class="container d-flex justify-content-center">
-<nav aria-label="Product results pages border-0">
-  <ul class="pagination pagination-lg border-0">
-    <li class="page-item active" aria-current="page">
-      <span class="page-link border-0 bg-0">
-        1
-        <span class="sr-only">(current)</span>
-      </span>
-    </li>
-    <li class="page-item"><a class="page-link border-0" href="#">2</a></li>
-    <li class="page-item"><a class="page-link border-0" href="#">3</a></li>
-  </ul>
-</nav>
+  <nav aria-label="ProductSearchResult">
+    <ul class="pagination pagination-lg">
+      <li class="page-item" aria-current="page">
+        <a class="page-link" href="#1">1</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#2">2</a></li>
+      <li class="page-item"><a class="page-link" href="#3">3</a></li>
+    </ul>
+  </nav>
 </div>
 
 
   
 
-  <div class="footer">
-    <div class="container-fluid subscribe">
-        <div class="container">
-          <div class="row mb-md-3">
-            <div class="col-md-5 p-0">
-              <h3 class="text-graynav font-weight-bolder mt-10">記得</br>訂閱以獲取更多資訊！</h3>
-            </div>
-          </div>
-          
-          <div class="row input-group pb-10">
-            <input type="text" class="form-control col-10 col-md-6 col-lg-4 " placeholder="Your email address" aria-label="Your email address" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn bg-primary text-white" type="button" id="button-addon2">Subscribe</button>
-            </div>
-          </div>
-          
-        </div>
-    </div>
-
-    <div class="container-fluid rights bg-primary">
+<div class="footer">
+  <div class="container-fluid subscribe">
       <div class="container">
-        <div class="row py-3 justify-content-between align-items-center">
-           <div class="col-12 col-md-6 d-flex align-items-center">
-             <img class="mr-3" src="img/d’Perfumewfooter.png" alt="">
-             <p class="text-white m-0">© 2020. All Rights Reserved.</p>
-           </div>
-           <ul class="col-lg-5 d-none text-white d-lg-flex list-unstyled m-0">
-             <li class="mr-6">
-               <a href="#" class="text-white">Product</a>
-             </li>
-             <li class="mr-6">
-              <a href="#" class="text-white">Blog</a>
-            </li>
-            <li class="mr-6">
-              <a href="#" class="text-white">Contact</a>
-            </li>
-           </ul>
+        <div class="row mb-md-3">
+          <div class="col-md-12 mb-3">
+            <div class="text text-grayLight font-weight-bolder mt-10">
+            <h3>記得</br>訂閱以獲取更多資訊！</h3>
+          </div>
+          </div>
         </div>
-    </div>
-    </div>
+        <div class="row">
+        <div class="input-group pb-10 col-11 col-md-6 col-lg-5 ">
+          <input type="text" class="form-control " placeholder="Your email address" aria-label="Your email address" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn bg-primary text-white btn-sm" type="button" id="button-addon2">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      </div>
   </div>
+
+  <div class="container-fluid rights bg-primary">
+    <div class="container">
+      <div class="py-3 d-flex justify-content-between align-items-center">
+         <div class="d-flex align-items-center">
+           <img class="mr-3" src="img/d’Perfumewfooter.png" alt="">
+           <p class="text-white m-0">© 2020. All Rights Reserved.</p>
+         </div>
+         <ul class="d-none text-white d-lg-flex list-unstyled m-0">
+           <li class="mr-6">
+             <a href="product.html" class="text-white">Product</a>
+           </li>
+           <li class="mr-6">
+            <a href="#" class="text-white">Blog</a>
+          </li>
+          <li class="mr-6">
+            <a href="#" class="text-white">Contact</a>
+          </li>
+         </ul>
+      </div>
+  </div>
+  </div>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
