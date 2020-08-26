@@ -29,7 +29,7 @@ h1{
 
   @include media-breakpoint-down(xs){
     background: no-repeat url(../img/footer-banner-pad.png);
-    
+    background-size: cover;
   }
 
   
