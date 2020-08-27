@@ -16,14 +16,14 @@
 
 <body>
 
-  <div class="container header mb-4">
+  <div class="container header mb-4" data-aos="fade-right">
     <nav class="row navbar navbar-expand-md navbar-light">
 
       <h1 class="col-5 col-md-3 col-lg-2 navbar-brand p-0 m-0"><a href="index.html">d’Perfume</a></h1>
 
       <div class="mobile-show col-5 d-flex d-md-none justify-content-end align-items-center">
         <div class="mobile-cart mr-3">
-          <a href=""><i class="fas fa-shopping-cart text-grayLight"></i></a>
+          <a href="product.html"><i class="fas fa-shopping-cart text-grayLight"></i></a>
           <p class="cart-num text-white text-center bg-primary">3</p>
         </div>
         <button class="navbar-toggler border-0 btn" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -50,7 +50,7 @@
           </li>
           <li class="nav-item d-flex align-items-center mr-3">
             <i class="fas fa-shopping-cart"></i>
-            <a class="nav-link" href="#">Cart(3)</a>
+            <a class="nav-link" href="product.html">Cart(3)</a>
           </li>
         </ul>
 
@@ -106,7 +106,7 @@
   <div class="container member">
     <div class="row">
       <div class="header col-12 col-lg-2 mb-5 mb-lg-0">
-        <h2 class="h5 d-none d-lg-flex mb-4">會員中心</h2>
+        <h5 class="d-none d-lg-flex mb-4">會員中心</h2>
         <ul class="nav nav-font-sm justify-content-between d-flex flex-lg-column ">
 
           <li class="nav-item mr- mb-lg-4 ">
@@ -129,7 +129,7 @@
         <ul class="info col-12 col-lg-4 list-unstyled mb-5">
           <li class="d-flex align-items-baseline mb-1">
             <i class="fas fa-user text-black mr-1"></i>
-            <h3 class="h6 mr-2 text-grayinfo">會員編號</h6>
+            <h6 class="mr-2 text-grayinfo">會員編號</h6>
             <p class="text-grayinfo">T00020080615</p>
           </li>
           <li class="row d-flex text-grayinfo">
@@ -162,7 +162,7 @@
 
         <div class="infoModify col-12 col-lg-8">
           <div class="personalInfo">
-          <h3 class="h6 font-weight-bolder">個人資料修改</h3>
+          <h6 class="font-weight-bolder">個人資料修改</h3>
           <hr class="mt-2 border-grayinfo">
           <form class="text-grayinfo">
             <div class="form-group row">
@@ -225,7 +225,7 @@
   
               </div>
               <div class="col-4 col-md-3">
-                <select name="area" id=" " class="form-control pr-0">
+                <select name="area" id="city" class="form-control pr-0">
                   <option>鹽埕區</option>
                   <option>中正區</option>
                 </select>
@@ -307,7 +307,7 @@
         </div>
         
         <div class="passWordModify">
-          <h3 class="h6 font-weight-bolder">修改密碼</h3>
+          <h6 class="font-weight-bolder">修改密碼</h3>
           <hr class="mt-2 border-grayinfo">
           <form>
             <div class="form-group row">
@@ -400,6 +400,35 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
   </script>
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 30, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 600, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+  });
+</script>
 </body>
 
 </html>
