@@ -73,6 +73,7 @@
 
   @include mobile{
     margin: 0 auto;
+    width: 100%;
   }
 
   .menu-item {
@@ -83,6 +84,7 @@
 
     @include pad{
       width: 100%;
+      margin-left: 0;
     }
     
 
@@ -155,7 +157,9 @@
 .pagelist {
   display: flex;
   justify-content: flex-end;
-
+  @include mobile{
+    justify-content: center;
+  }
   img{
     max-width: fit-content;
   }

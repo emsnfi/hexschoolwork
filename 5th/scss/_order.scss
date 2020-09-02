@@ -1,18 +1,18 @@
 .order {
+  max-width:940px;
   display: flex;
   align-items: flex-start;
-  width: 90%;
+  //width: 90%;
   margin: 0 auto;
   line-height:1.5;
-  @include pad{
-    width:100%;
-  }
+  
   .invoice {
     color: $green-light;
     width: 60%;
     margin-right: 10px;
     @include underpad{
       width:100%;
+      margin: 0;
     }
     &-list {
       padding: 40px;
@@ -147,8 +147,10 @@
         ;
 
         img {
-          width: 40%;
-          height: 100px;
+         // width: 40%;
+         // height: 100px;
+          width: 100px;
+          height: 80px;
         }
 
         .product-detail {
