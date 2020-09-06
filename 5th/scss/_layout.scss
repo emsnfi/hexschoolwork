@@ -76,9 +76,8 @@
 
     @include  mobile{
       opacity: 0;
-      
       position: absolute;
-      top: 50%;
+      top: 70%;
       left: 0;
     }
     .nav-item {
@@ -88,12 +87,14 @@
 
       @include pad{
         padding: 0 5px;
+        
       }
       &:hover{
         @include mobile{
           background-color:#EAF0ED;
           outline: none;
           text-decoration: none;
+          
         }
       }
 

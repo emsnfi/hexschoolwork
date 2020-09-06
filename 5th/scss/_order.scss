@@ -26,6 +26,9 @@
         align-content: center;
         justify-content: space-around;
         margin: 25px 0;
+        li{
+          width: 100%;
+        }
         .preset{
           background-color: $green-light;
           color: $green;
@@ -35,7 +38,7 @@
         button {
           padding: 15px 45px;
           cursor: pointer;
-          width: 50%;
+          width: 100%;
           font-size: $font-size-base;
           border: 1px solid $green-light;
           background-color: transparent;
