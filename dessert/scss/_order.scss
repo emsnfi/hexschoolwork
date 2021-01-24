@@ -1,0 +1,187 @@
+.order {
+  max-width:940px;
+  display: flex;
+  align-items: flex-start;
+  //width: 90%;
+  margin: 0 auto;
+  line-height:1.5;
+  
+  .invoice {
+    color: $green-light;
+    width: 60%;
+    margin-right: 10px;
+    @include underpad{
+      width:100%;
+      margin: 0;
+    }
+    &-list {
+      padding: 40px;
+      padding-bottom:10px;
+      background-color: $green;
+      @include underpad{
+        padding: 40px;
+      }
+      .content {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+        margin: 25px 0;
+        .preset{
+          background-color: $green-light;
+          color: $green;
+          border-right:1px solid;
+          border-left:1px solid;
+        }
+        button {
+          padding: 15px 45px;
+          cursor: pointer;
+          width: 50%;
+          font-size: $font-size-base;
+          border: 1px solid $green-light;
+          background-color: transparent;
+          color: $green-light;
+          white-space: nowrap;
+          
+          @include pad{
+            padding: 15px 30px;
+          }
+          @include underpad{
+            padding: 15px 12px;
+            font-size: 90%;
+          }
+          
+          &:hover{
+            background-color: $green-light;
+            color: $green;
+            border-right:1px solid;
+            border-left:1px solid;
+          }
+        }
+
+      }
+
+      .input-content {
+        margin:20px 0;
+        display: block;
+        input {
+          margin: 15px 0;
+          padding: 20px 15px;
+          width: 90%;
+          background-color: $green-light;
+          font-size: $font-size-base;
+        }
+      }
+
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+          font-size: $font-size-large;
+          margin-right: 20px;
+          white-space: nowrap;
+          
+        }
+
+        .progress {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          hr {
+            width: 55px;
+            @include underpad{
+              width: 35px;
+            }
+            @include smallmobile{
+              width:15px;
+            }
+          }
+        }
+      }
+
+    }
+    .confirm{
+      width: 100%;
+      background-color: $orange;
+      padding:15px 0;
+      line-height:1.5;
+      font-size:$font-size-medium;
+      color: $green;
+      border:transparent;
+      &:hover{
+        background-color: $orange-dark;
+      }
+    }
+  }
+
+  .detail {
+    width: 40%;
+    @include underpad{
+      display: none;
+    }
+    .price {
+      background-color: white;
+      border: 1px solid $green-light;
+      color: $green-lighter;
+      margin-bottom: 10px;
+
+      h3 {
+        font-size: $font-size-medium;
+        padding: 18px 0;
+        background-color: $green-light;
+        text-align :center;
+      }
+
+      &-list {
+        padding: 10px;
+      }
+
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        font-size: $font-size-base;
+        padding-top: 10px;
+        align-items: center;
+        ;
+
+        img {
+         // width: 40%;
+         // height: 100px;
+          width: 100px;
+          height: 80px;
+        }
+
+        .product-detail {
+          width: 50%;
+          white-space: nowrap;
+          @include pad{
+            font-size:80%;
+          }
+          li {
+            padding-top: 5px;
+            line-height: 1.5;
+          }
+
+          .product-name {
+            font-size: $font-size-base;
+          }
+
+          .product-price {
+            font-size: $font-size-medium;
+          }
+        }
+
+      }
+
+      .total {
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+      }
+    }
+
+  }
+}
